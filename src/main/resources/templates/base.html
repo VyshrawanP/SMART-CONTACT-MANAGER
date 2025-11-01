@@ -8,11 +8,12 @@ xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thyme
     <title>SCM Application Layout</title>
 
     <link rel="stylesheet" th:href="@{/css/output.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <div data-th-replace="~{navbar :: navbar}"></div>
-   <main class="h-screen w-full dark:bg-gray-600 text-white" layout:fragment="content"></main>
+   <main class="h-screen w-full dark:bg-gray-600 text-black dark:text-white" layout:fragment="content"></main>
     
 
 
@@ -23,6 +24,7 @@ xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thyme
 
 
     <script src="https://unpkg.com/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <script data-th-src="@{'js/script.js'}"></script>
 
 </body>
 </html>
