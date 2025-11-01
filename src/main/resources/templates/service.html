@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!-- 
+  FIX: We are telling the parent function 'parent' to take the block 
+  identified by 'content_block' (the section below) and use it for the 'content' variable.
+-->
+<html xmlns:th="http://www.thymeleaf.org"xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{base}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+</head>
+<body>
+    
+    <!-- THIS IS THE BLOCK THAT IS PASSED TO THE PARENT'S VARIABLE -->
+ <div layout:fragment="content">
+        <h1>Welcome to the services page</h1>
+        <h2>Services offered by SCM</h2>
+        </div> 
+    
+</body>
+</html>
