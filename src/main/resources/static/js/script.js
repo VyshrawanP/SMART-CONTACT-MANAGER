@@ -7,16 +7,17 @@ document.getElementById("theme_change_button").addEventListener("click", () => {
   currentTheme = currentTheme === "dark" ? "light" : "dark";
   setTheme(currentTheme);
   changeTheme();
+  document.querySelector("#theme_change_button").querySelector('span').textContent=currentTheme=="light"? "dark":"light";
 });
 
 function changeTheme(){
         const html = document.querySelector("html");
     html.classList.remove("light", "dark");
     html.classList.add(currentTheme);
-
-
-
+    
 }
+
+
 
 //get theme 
 function getTheme(){
